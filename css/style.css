@@ -1,0 +1,15 @@
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.hero {
+    background: #f8f9fa;
+}
+
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
