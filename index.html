@@ -10,18 +10,16 @@
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
     />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
       rel="stylesheet"
-      href="css/style.css"
     />
+
+    <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <div class="container">
@@ -29,104 +27,168 @@
       </div>
     </nav>
 
-    <section id="hero" class="hero text-center py-5">
+    <section id="hero" class="hero py-5">
       <div class="container">
-        <img src="assets/profile.jpg" class="rounded-circle mb-3" width="150" />
-        <h1>Vergel Jr. D. Cutaran</h1>
-        <p>Software Developer</p>
+        <div class="hero-card text-center">
+          <img
+            src="assets/profile.jpg"
+            class="profile-img mb-4"
+            alt="Profile"
+          />
 
-        <a href="https://github.com/vjctrn" class="btn btn-primary">GitHub</a>
-        <a
-          href="https://www.linkedin.com/in/vergel-cutaran-099522330/"
-          class="btn btn-outline-dark"
-          >LinkedIn</a
-        >
+          <h1 class="display-5 fw-bold">Vergel Jr. D. Cutaran</h1>
+
+          <h5 class="text-primary mb-3">
+            IT Student • DOST Scholar • Aspiring Software Developer
+          </h5>
+
+          <p class="hero-description mx-auto">
+            Passionate about software development, problem solving, and
+            continuous learning. Currently exploring C#, Python, and modern web
+            technologies while pursuing a degree in Information Technology.
+          </p>
+
+          <div class="d-flex justify-content-center gap-2 flex-wrap mb-4">
+            <a href="https://github.com/vjctrn" class="btn btn-primary"
+              >GitHub</a
+            >
+
+            <a
+              href="https://www.linkedin.com/in/vergel-cutaran-099522330/"
+              class="btn linkedin-btn"
+            >
+              LinkedIn
+            </a>
+          </div>
+
+          <div class="row g-3">
+            <div class="col-md-4">
+              <div class="hero-stat">
+                <h3>5+</h3>
+                <p>Achievements</p>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="hero-stat">
+                <h3>10+</h3>
+                <p>Technologies</p>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="hero-stat">
+                <h3>2+</h3>
+                <p>Years Learning</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="about" class="container py-3">
-      <h2>About</h2>
-      <p>
-        A 2nd-year college student attending the Polytechnic University of the
-        Philippines Santo Tomas, majoring in Information Technology.
-      </p>
-    </section>
+    <section class="container py-4">
+      <div class="row g-4">
+        <div class="col-lg-8">
+          <div class="bento-card h-100">
+            <h2>About</h2>
 
-    <section id="skills" class="container py-3">
-      <h2>Skills</h2>
+            <p>
+              A 2nd-year college student attending the Polytechnic University of
+              the Philippines Santo Tomas, majoring in Information Technology.
+            </p>
+          </div>
+        </div>
 
-      <h5>
-        <span class="badge bg-primary">SQL</span>
-        <span class="badge bg-primary">Python</span>
-        <span class="badge bg-primary">PHP</span>
-        <span class="badge bg-primary">HTML</span>
-        <span class="badge bg-primary">CSS</span>
-        <span class="badge bg-primary">JavaScript</span>
-        <span class="badge bg-primary">Bootstrap</span>
-        <span class="badge bg-primary">C#</span>
-        <span class="badge bg-primary">C++</span>
-        <span class="badge bg-primary">Flask</span>
-      </h5>
+        <div class="col-lg-4">
+          <div class="bento-card h-100">
+            <h2>Current Pursuits</h2>
+
+            <ul class="mb-0">
+              <li>Learning C#</li>
+              <li>Learning Python</li>
+              <li>Exploring backend development</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="bento-card">
+            <h2>Skills</h2>
+
+            <div class="skills-grid">
+              <span class="badge bg-primary">SQL</span>
+              <span class="badge bg-primary">Python</span>
+              <span class="badge bg-primary">PHP</span>
+              <span class="badge bg-primary">HTML</span>
+              <span class="badge bg-primary">CSS</span>
+              <span class="badge bg-primary">JavaScript</span>
+              <span class="badge bg-primary">Bootstrap</span>
+              <span class="badge bg-primary">C#</span>
+              <span class="badge bg-primary">C++</span>
+              <span class="badge bg-primary">Flask</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="achievements" class="container py-3">
       <h2 class="mb-4">Achievements</h2>
 
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="year">2024 - Present</div>
-
-          <h5>DOST Scholar</h5>
-
-          <p>Passed the DOST Scholarship examination and granted financial support for my academic pursuits</p>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <div class="achievement-card">
+            <div class="year">2024 - Present</div>
+            <h5>DOST Scholar</h5>
+            <p class="mb-0">
+              Passed the DOST Scholarship examination and granted financial
+              support for my academic pursuits.
+            </p>
+          </div>
         </div>
 
-        <div class="timeline-item">
-          <div class="year">2024 - Present</div>
-
-          <h5>Technical Committee Member</h5>
-
-          <p>
-            Computer Society - Polytechnic University of the Philippines Santo
-            Tomas
-          </p>
+        <div class="col-md-6">
+          <div class="achievement-card">
+            <div class="year">2024 - Present</div>
+            <h5>Technical Committee Member</h5>
+            <p class="mb-0">
+              Computer Society - Polytechnic University of the Philippines Santo
+              Tomas.
+            </p>
+          </div>
         </div>
 
-        <div class="timeline-item">
-          <div class="year">2024 - 2025</div>
-
-          <h5>Jr. Web Developer</h5>
-
-          <p>
-            ISKOnnovators Student Community - Polytechnic University of the
-            Philippines Santo Tomas
-          </p>
+        <div class="col-md-6">
+          <div class="achievement-card">
+            <div class="year">2024 - 2025</div>
+            <h5>Jr. Web Developer</h5>
+            <p class="mb-0">
+              ISKOnnovators Student Community - Polytechnic University of the
+              Philippines Santo Tomas.
+            </p>
+          </div>
         </div>
 
-        <div class="timeline-item">
-          <div class="year">2024 - 2025</div>
-
-          <h5>Dean's Lister</h5>
-
-          <p>Academic excellence recognition</p>
+        <div class="col-md-6">
+          <div class="achievement-card">
+            <div class="year">2024 - 2025</div>
+            <h5>Dean's Lister</h5>
+            <p class="mb-0">Academic excellence recognition.</p>
+          </div>
         </div>
 
-        <div class="timeline-item">
-          <div class="year">2024 - 2025</div>
-
-          <h5>Vice President External</h5>
-
-          <p>Provided leadership and coordination for external relations within the class</p>
+        <div class="col-md-6">
+          <div class="achievement-card">
+            <div class="year">2024 - 2025</div>
+            <h5>Vice President External</h5>
+            <p class="mb-0">
+              Provided leadership and coordination for external relations within
+              the class.
+            </p>
+          </div>
         </div>
       </div>
-    </section>
-
-    <section class="container py-3">
-      <h2>Current Pursuits</h2>
-      <ul>
-        <li>Learning C#</li>
-        <li>Learning Python</li>
-      </ul>
     </section>
 
     <footer class="bg-dark text-white text-center p-3">
