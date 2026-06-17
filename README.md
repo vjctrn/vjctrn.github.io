@@ -1,3 +1,6 @@
 # vjctrn.github.io
-Portfolio of Vergel Jr. D. Cutaran. Detailing my achievements, skills, and tools.
-Currently pursuing Bachelor of Science in Information Technology in Polytechnic University of the Philippines Santo Tomas Campus.
+
+Portfolio of Vergel Jr. D. Cutaran.
+
+Currently pursuing Bachelor of Science in Information Technology in the Polytechnic University of the Philippines Santo Tomas.
+This portfolio contains my achievements, current pursuits, skills, and tools used.
