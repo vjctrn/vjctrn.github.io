@@ -1,8 +1,8 @@
 :root {
-  --bg: #0f1115;
+  --bg: #1e1e2e;
   --card: #181c22;
-  --text: #e6eaf0;
-  --border: #2b313a;
+  --text: #cdd6f4;
+  --border: #b4befe;
 }
 
 * {
@@ -153,4 +153,55 @@ body {
 .tech-icon i {
   font-size: 2rem;
   color: var(--text);
+}
+
+.navbar {
+  background: #3b4252 !important;
+  border-bottom: 1px solid var(--border);
+}
+
+.text-primary {
+  color: var(--accent-2) !important;
+}
+
+.btn-primary {
+  background: var(--accent-4);
+  border-color: var(--accent-4);
+}
+
+.btn-primary:hover {
+  background: var(--accent-3);
+  border-color: var(--accent-3);
+}
+
+.hero-card h1,
+.bento-card h2,
+.achievement-card h5 {
+  color: var(--accent-1);
+}
+
+.tech-icon i {
+  color: var(--accent-2);
+}
+
+.tech-icon:hover {
+  border-color: var(--accent-2);
+  box-shadow: 0 0 20px rgba(136, 192, 208, 0.25);
+}
+
+.hero-stat h3 {
+  color: var(--accent-2);
+}
+
+a {
+  color: var(--accent-2);
+}
+
+a:hover {
+  color: var(--accent-1);
+}
+
+footer {
+  background: #3b4252 !important;
+  border-top: 1px solid var(--border);
 }
