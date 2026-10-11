@@ -210,3 +210,53 @@ footer {
 #pursuits:target {
   scroll-margin-top: 80px;
 }
+
+.activities-page {
+  min-height: calc(100vh - 170px);
+}
+
+.activities-intro .lead {
+  max-width: 650px;
+}
+
+.eyebrow {
+  color: var(--accent-2);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+
+.activity-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  color: var(--text);
+  padding: 2rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.activity-card:hover {
+  border-color: var(--accent-2);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  color: var(--text);
+  transform: translateY(-4px);
+}
+
+.activity-card h2 {
+  color: var(--accent-1);
+  font-size: 1.35rem;
+  margin: 1rem 0 0.75rem;
+}
+
+.activity-icon {
+  color: var(--accent-2);
+  font-size: 2.25rem;
+}
+
+.activity-link {
+  color: var(--accent-2);
+  display: inline-block;
+  font-weight: 500;
+  margin-top: 1.5rem;
+}
