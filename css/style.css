@@ -20,8 +20,6 @@ body {
 
 .hero {
   min-height: 80vh;
-  display: flex;
-  align-items: center;
 }
 
 .hero-card,
@@ -68,16 +66,6 @@ body {
   transform: translateY(-4px);
 }
 
-.skills-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.skills-grid .badge {
-  padding: 0.6rem 0.8rem;
-}
-
 .achievement-card {
   border-radius: 20px;
   padding: 1.25rem;
@@ -104,10 +92,6 @@ body {
   color: #ffffff;
 }
 
-footer {
-  margin-top: 3rem;
-}
-
 .hero-card,
 .bento-card,
 .achievement-card {
@@ -126,17 +110,7 @@ body {
   color: var(--text);
 }
 
-.icon-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
 .tech-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 72px;
   border-radius: 16px;
   background: rgba(255, 255, 255, 0.04);
