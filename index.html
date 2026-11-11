@@ -19,7 +19,7 @@
 
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
 
     <link
@@ -31,16 +31,19 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" aria-label="Primary navigation">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img src="assets/logo.ico" alt="Logo" width="60" height="24" />
+          <img src="assets/logo.ico" alt="VJ's Portfolio" width="60" height="24" />
         </a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navMenu"
+          aria-controls="navMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -70,7 +73,8 @@
       </div>
     </nav>
 
-    <section id="hero" class="hero d-flex align-items-center py-5">
+    <main>
+      <section id="hero" class="hero d-flex align-items-center py-5">
       <div class="container">
         <div class="hero-card text-center">
           <img
@@ -92,15 +96,15 @@
           </p>
 
           <div class="d-flex justify-content-center gap-2 flex-wrap mb-4">
-            <a href="https://github.com/vjctrn" class="btn btn-primary"
-              >GitHub</a
-            >
+            <a href="https://github.com/vjctrn" class="btn btn-primary">
+              <i class="fa-brands fa-github me-2" aria-hidden="true"></i>GitHub
+            </a>
 
             <a
               href="https://www.linkedin.com/in/vergel-cutaran-099522330/"
               class="btn linkedin-btn"
             >
-              LinkedIn
+              <i class="fa-brands fa-linkedin me-2" aria-hidden="true"></i>LinkedIn
             </a>
           </div>
 
@@ -128,9 +132,9 @@
           </div>
         </div>
       </div>
-    </section>
+      </section>
 
-    <section class="container py-4">
+      <section class="container py-4" aria-label="Portfolio overview">
       <div class="row g-4">
         <div id="about" class="col-lg-8">
           <div class="bento-card h-100">
@@ -179,13 +183,14 @@
           </div>
         </div>
       </div>
-    </section>
+      </section>
 
-    <section id="achievements" class="container py-3">
+      <section id="achievements" class="container py-3">
       <h2 class="mb-4">Achievements</h2>
 
       <div id="achievements-list" class="row g-3"></div>
-    </section>
+      </section>
+    </main>
 
     <footer class="bg-dark text-white text-center p-3 mt-5">
       Email: cutaranvergel@gmail.com | Phone: 0906 005 2346

@@ -12,12 +12,12 @@ const techStack = [
 ];
 
 const tools = [
-  ["bi-code-slash", "VS Code"],
-  ["bi-palette", "Canva"],
-  ["bi-vector-pen", "Figma"],
-  ["bi-box", "Blender"],
-  ["bi-git", "Git"],
-  ["bi-github", "GitHub"],
+  ["fa-solid fa-code", "VS Code"],
+  ["fa-solid fa-palette", "Canva"],
+  ["fa-solid fa-pen-nib", "Figma"],
+  ["fa-solid fa-cube", "Blender"],
+  ["fa-brands fa-git-alt", "Git"],
+  ["fa-brands fa-github", "GitHub"],
 ];
 
 const achievements = [
@@ -47,52 +47,52 @@ const achievements = [
 const activities = [
   [
     "https://github.com/vjctrn/academic",
-    "bi-folder2-open",
+    "fa-solid fa-folder-open",
     "All Academic Projects",
     "See the complete collection of my academic projects on GitHub.",
     "View repository",
   ],
   [
     "https://vjctrn.github.io/academic/webdev/activities/a01/index.html",
-    "bi-file-earmark-code",
+    "fa-solid fa-file-code",
     "Web Development Activity 01",
     "View my bento layout work.",
     "Open activity",
   ],
   [
     "https://vjctrn.github.io/academic/webdev/activities/a02/index.html",
-    "bi-file-earmark-code",
+    "fa-solid fa-file-code",
     "Web Development Activity 02",
     "View my JS for loop and JSON work.",
     "Open activity",
   ],
   [
     "https://vjctrn.github.io/academic/webdev/activities/midterm/index.html",
-    "bi-file-earmark-code",
+    "fa-solid fa-file-code",
     "Web Development Midterm",
     "View my API work.",
     "Open activity",
   ],
   [
     "https://github.com/vjctrn/academic/tree/main/webdev",
-    "bi-window",
+    "fa-solid fa-window-maximize",
     "Web Development Projects",
     "Browse the source code for my web development coursework.",
     "View projects",
   ],
   [
     "https://github.com/vjctrn/academic/tree/main/dba",
-    "bi-database",
+    "fa-solid fa-database",
     "Database Administration Projects",
-    "Explore my database administration and database-related projects.",
+    "Explore my database administration and database-related coursework.",
     "View projects",
   ],
 ];
 
-const iconCard = (icon, label, prefix) => `
+const iconCard = (icon, label) => `
   <span class="tech-icon d-flex justify-content-center align-items-center"
     data-bs-toggle="tooltip" data-bs-title="${label}">
-    <i class="${prefix}${icon}"></i>
+    <i class="${icon}" aria-hidden="true"></i>
   </span>`;
 
 document
@@ -101,7 +101,7 @@ document
     ...techStack.map(([icon, label]) =>
       document
         .createRange()
-        .createContextualFragment(iconCard(icon, label, "devicon-")),
+        .createContextualFragment(iconCard(`devicon-${icon}`, label)),
     ),
   );
 
@@ -109,9 +109,7 @@ document
   .getElementById("tools-list")
   ?.replaceChildren(
     ...tools.map(([icon, label]) =>
-      document
-        .createRange()
-        .createContextualFragment(iconCard(icon, label, "")),
+      document.createRange().createContextualFragment(iconCard(icon, label)),
     ),
   );
 
@@ -134,11 +132,11 @@ document.getElementById("activities-list")?.replaceChildren(
       <div class="col-md-6">
         <a class="activity-card d-block h-100" href="${href}"
           target="_blank" rel="noopener noreferrer">
-          <i class="bi ${icon} activity-icon"></i>
+          <i class="${icon} activity-icon" aria-hidden="true"></i>
           <h2>${title}</h2>
           <p class="mb-0">${description}</p>
           <span class="activity-link">${action}
-            <i class="bi bi-arrow-up-right"></i>
+            <i class="fa-solid fa-arrow-up-right"></i>
           </span>
         </a>
       </div>`),
